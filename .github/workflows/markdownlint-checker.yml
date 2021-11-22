@@ -1,0 +1,23 @@
+name: Study Markdownlint-Checker Action
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint_check:
+    runs_on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+
+      - name: add markdownlint-cli
+        run : |
+          echo "install markdownlint-cli"
+          yarn global add markdownlint-cli
+      
+      - name: run markdonwlint-cli
+        run : |
+          markdownlint */*.md
