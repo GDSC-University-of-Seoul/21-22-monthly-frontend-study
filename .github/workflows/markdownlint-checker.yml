@@ -20,4 +20,4 @@ jobs:
       
       - name: run markdonwlint-cli
         run : |
-          markdownlint */*.md
+          markdownlint **/*.md --disable MD013
