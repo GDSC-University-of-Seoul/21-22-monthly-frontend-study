@@ -6,17 +6,17 @@
 
 아무튼, 제가 한 때 개발자를 꿈꿨을 때 검은 화면(콘솔)에 명령어를 입력하는 멋진 모습을 상상한 적이 있었는데(지금은 아님. GUI 최고) 그 분야에 있어서 가장 접근하기 쉽고 간지나는 것이 Git이라고 생각하기에 Git에 대해 제가 알고 있는 것을 조금씩 정리하려고 합니다.
 
-## Git의 3가지 상태
+## :stars: Git의 3가지 상태
 
-### 파일의 상태
+### :star: 파일의 상태
 
 로컬 기준으로 Git에서 파일은 `modified` | `staged` | `commited` 라는 3가지 상태를 가집니다. 물론 `untracked`라고 Git에서 추적(관리)하고 있지 않는 파일을 뜻하는 상태도 있습니다만, Git이 관리하는 파일의 상태라고 하면 앞선 세 가지가 대표적이라고 할 수 있습니다.
 
-![img1](https://i.imgur.com/D4i2TUF.png)
+![img](https://i.imgur.com/D4i2TUF.png)
 
 VSCode라는 IDE를 사용하면 Git을 사용하기 쉬운데요, 위에서 `throttle.ts`라는 파일은 한 번도 Git에 인식시킨 적없는 처음 작성한 파일이라 `U`상태(untracked), 나머지 두 파일은 이미 Git에서 관리하고 있었고 수정됨이 감지되어 뜬 `M`상태(modified)임을 알 수 있습니다.
 
-![img2](https://i.imgur.com/EYC6cKG.png)
+![img](https://i.imgur.com/EYC6cKG.png)
 
 이 사진은 Git에 대해 검색하다보면 정말 많이 마주칠 수 있는 사진인데요, 아까 설명하지 않은 `unmodified` 상태가 보입니다. 사실 이 상태는 `commited` 상태와도 같다고 할 수 있는 게, commit 시점을 기준으로 상태로 나눴기 때문입니다. 따라서 다시 설명을 해보자면
 
@@ -32,11 +32,11 @@ VSCode라는 IDE를 사용하면 Git을 사용하기 쉬운데요, 위에서 `th
 `add`, `commit`은 아래에서 다시 설명해보도록 하겠습니다.
 사진에서의 `add the file`과 `git add`는 조금 다른 의미이기 때문에 주의해야 합니다.
 
-### 3가지 영역
+### :cloud: 3가지 영역
 
 Git은 파일의 상태에 따른 가상의 영역을 가집니다. 이 영역은 `working directory` | `staging area` | `git directory(repository)`로 나뉘는데요, 복잡할 수 있지만 사실 파일의 상태와 매칭되게 됩니다.
 
-![img3](https://i.imgur.com/Rfdwl50.png)
+![img](https://i.imgur.com/Rfdwl50.png)
 
 아까와는 살짝 다른 사진인데요, 용어를 조금 정리해보도록 하겠습니다.
 
@@ -53,7 +53,7 @@ Git은 파일의 상태에 따른 가상의 영역을 가집니다. 이 영역�
 : staging area에 내가 작업한 파일들을 다 옮겼다면, 다음 절차로 `git commit`을 하게 됩니다. 그러면 staging area에 있는 파일들이 모두 git directory로 옮겨지게 되는데요, `commit`이라는 것은 생각보다 복잡할 수 있어서 따로 다루도록 하겠습니다.
 여튼 이렇게 git directory로 옮겨지게 되면 이는 비로소 원격 저장소로 옮길 수 있는 상태가 되고 `git push`를 통해 원격 저장소로 보내게 됩니다.
 
-### 명령어
+### :computer: 명령어
 
 사실 이미 언급을 했는데요, 분량을 늘리기 위해 다시 한 번 정리하겠습니다.
 
@@ -61,7 +61,7 @@ Git은 파일의 상태에 따른 가상의 영역을 가집니다. 이 영역�
 
 : 내가 작업한 파일들을 `staging area`에 옮기는 명령어입니다.
 
-![img4](https://i.imgur.com/Xkkaiha.png)
+![img](https://i.imgur.com/Xkkaiha.png)
 
 이 `+`버튼이 git add와 같은 역할을 하며, 특정 파일만 골라서 `staging area`에 옮길 수도 있고 `git add .` 또는 `git add -A`와 같은 명령어로 한꺼번에 옮길 수도 있습니다.
 
@@ -81,12 +81,12 @@ Git은 파일의 상태에 따른 가상의 영역을 가집니다. 이 영역�
 
 : 사실 앞서 설명했던 것을 이 명령어로 터미널에서 직접 확인할 수 있습니다.
 
-![img5](https://i.imgur.com/Fs6ANdK.png)
+![img](https://i.imgur.com/Fs6ANdK.png)
 
 - `leemir-git-1.md`라는 파일은 `staging area`에 있는 상태
 - `test.md`라는 파일은 `working directory`에 있으면서 `untracked`인 상태
 
-## 마치며
+## :sweat_smile: 마치며
 
 정리라는 건 역시 쉬운 게 아닌 것 같아요.
 어떻게 이걸 설명해야하나 하다가 중요한 부분들을 놓친 게 좀 있어서 아쉽네요..!!
