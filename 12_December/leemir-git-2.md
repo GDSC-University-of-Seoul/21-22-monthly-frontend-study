@@ -38,6 +38,7 @@ branch가 있으면 새로운 기능을 개발할 때 현재의 branch를 남겨
 ![learngitbranching_image1](https://i.imgur.com/xKXAET7.png)
 
 항상 Git을 처음 배우는 사람들에게 추천하는 사이트입니다. [[링크]](https://learngitbranching.js.org/?locale=ko)
+
 Git의 **단위**는 **commit**이기 때문에 위 사진에서 `C0`, `C1`, `C2`...가 적힌 동그라미들이 commit이고, `main`, `develop`, `feat/1`, `feat/2`가 각 commit을 가리키는 branch가 됩니다.
 
 ![learngitbranching_image2](https://i.imgur.com/bbKAWFC.png)
