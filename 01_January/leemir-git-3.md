@@ -116,6 +116,8 @@ _(Git과 Github의 차이가 헷갈리시는 분들은 [1탄](https://github.com
 - **나의 이름은** flow
   - `master` / `develop` 말고도 `팀원 각자 이름이 branch의 이름인 개인용 branch` 존재
   - `개인 branch`에서 `develop`으로, `develop`에서 `master`로 병합
+  - 어쩌면 보급형 Github-flow일지도
+    - `branch`의 이름이 그것의 역할이 아닌 개인의 이름이고, 병합해도 `branch`를 삭제하지 않고 유지하는 차이가 있음
   - 팀원 각자 기능을 완벽하게 분리해서 개발하지 않으면 conflict가 나기 쉬움
     - 개발 일정을 잘 짜야함
 
