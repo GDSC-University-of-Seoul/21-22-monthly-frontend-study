@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { NumberProvider } from './Context/NumberContext';
+import Header from './Component/Header';
+import Body from './Component/Body';
+import Footer from './Component/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NumberProvider>
+      <div className='app'>
+        <Header />
+        <Body />
+        <Footer />
+      </div>
+    </NumberProvider>
   );
 }
 
