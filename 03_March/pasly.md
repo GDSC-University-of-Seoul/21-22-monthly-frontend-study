@@ -14,3 +14,17 @@ socket이란 프로세스가 네트워크 세계를 향해서 그리고 네트�
 실제 소켓 통신의 아주 정석적인인 흐름을 한 번 보여드리도록 하겠습니다.
 
 <img src="https://on1ystar.github.io/public/img/socket/socket-1-3.png"></img>
+
+### 서버 (Server)
+
+1. socket() 함수를 이용하여 소켓을 생성
+2. bind() 함수로 ip와 port 번호를 설정하게 됩니다.
+3. listen() 함수로 클라이언트의 접근 요청에 수신 대기열을 만들어 몇 개의 클라이언트를 대기 시킬지 결정
+4. accept() 함수를 사용하여 클라이언트와의 연결을 기다림
+
+### 클라이언트 (Client)
+
+1. socket() 함수로 가장 먼저 소켓을 연다.
+2. connect() 함수를 이용하여 통신할 서버의 ip와 port 번호에 통신 시도
+3. 통신을 시도 시, accet()함수를 이용하여 클라이언트의 socket descriptor를 반환
+4. 이를 통해
