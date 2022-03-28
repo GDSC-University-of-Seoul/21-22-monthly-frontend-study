@@ -1,4 +1,4 @@
-# [CSS] Animation 함수들에 대해 알아보자
+# [CSS] Animation 속성들에 대해 알아보자
 
 FreeCodeCamp에서 animation 관련 문제를 풀다가 좀 더 자세하게 알아보고 싶어서 정리해 봅니다!
 
